@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList<Konsumsi> listKonsumsi = new ArrayList<>();
@@ -13,14 +15,16 @@ public class Main {
         breakfast.setKonsumsi(roti,susu);
         listKonsumsi.add(breakfast);
 
-        Makanan roti = new Makanan();
+        Makanan nasi = new Makanan();
         roti.setNamaHidangan("Nasi Putih");
 
-        Minuman susu = new Minuman();
+        Minuman air = new Minuman();
         susu.setNamaHidangan("Air Putih");
 
-        breakfast.setKonsumsi(roti,susu);
-        listKonsumsi.add(breakfast);
+        launch.setKonsumsi(nasi,air);
+        listKonsumsi.add(launch);
+
+        System.out.println(listKonsumsi);
 
     }
 

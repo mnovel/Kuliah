@@ -11,9 +11,9 @@ public class Konsumsi <M,I>{
         return i;
     }
 
-    public void setKonsumsi (M makanam, I minuman){
+    public void setKonsumsi (M makanan, I minuman){
         this.m = makanan;
-        this.i = minumnan;
+        this.i = minuman;
 
     }
 }

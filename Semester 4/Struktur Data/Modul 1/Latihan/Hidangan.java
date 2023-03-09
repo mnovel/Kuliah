@@ -5,7 +5,7 @@ public class Hidangan {
         return namaHidangan;
     }
 
-    public void setNamaHidangan(){
+    public void setNamaHidangan(String namaHidangan){
         this.namaHidangan = namaHidangan;
     }
 
