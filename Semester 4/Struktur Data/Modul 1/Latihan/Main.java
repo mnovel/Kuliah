@@ -16,15 +16,23 @@ public class Main {
         listKonsumsi.add(breakfast);
 
         Makanan nasi = new Makanan();
-        roti.setNamaHidangan("Nasi Putih");
+        nasi.setNamaHidangan("Nasi Putih");
 
         Minuman air = new Minuman();
-        susu.setNamaHidangan("Air Putih");
+        air.setNamaHidangan("Air Putih");
 
         launch.setKonsumsi(nasi,air);
         listKonsumsi.add(launch);
 
-        System.out.println(listKonsumsi);
+        System.out.println("Menu Konsumsi :");
+        for(Konsumsi<Makanan, Minuman> konsumsi: listKonsumsi){
+            Makanan makanan = konsumsi.getM();
+            Minuman minuman = konsumsi.getI();
+
+            System.out.println(makanan.disantap());
+            System.out.println(minuman.disantap());
+        }
+
 
     }
 
